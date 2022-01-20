@@ -1,0 +1,22 @@
+//************************************
+//***! abstracts imports
+//************************************
+
+@import "../abstracts/variables";
+
+//************************************
+//***! Layout imports
+//************************************
+
+@import "../layout/01header", "../layout/02main", "../layout/03footer";
+
+//*******************************************************
+
+.bgroundContainer {
+  background-image: url($bgImg);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

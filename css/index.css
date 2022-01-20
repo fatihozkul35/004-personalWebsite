@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-family: "Segoe UI", Nunito, Tahoma, Genava, Verdana, sans-serif;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  padding-right: 1rem;
+  color: white;
+}
+.navbar ul li:hover {
+  background-color: red;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto 0 auto 0;
+  height: 80vh;
+  color: white;
+}
+.sectionContainer h1 {
+  border-bottom: 3px solid white;
+  font-size: 5rem;
+}
+.sectionContainer h1 span {
+  color: red;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.footer .footerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgroundContainer {
+  background-image: url("../img/model-1.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/*# sourceMappingURL=index.css.map */

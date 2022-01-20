@@ -1,0 +1,16 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto 0 auto 0;
+  height: 80vh;
+  color: white;
+  h1 {
+    border-bottom: 3px solid white;
+    font-size: 5rem;
+    span {
+      color: red;
+    }
+  }
+}
