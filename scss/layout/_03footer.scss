@@ -1,7 +1,47 @@
-.footer {
+//************************************
+//***! HOME FOOTER
+//************************************
+
+.footerHorizontal {
   display: flex;
   justify-content: space-between;
-  color: white;
+  .footerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+//************************************
+//***! ABOUT FOOTER
+//************************************
+
+.footerVertical {
+  width: 100%;
+  .footerLeft {
+    ul {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .footerRight {
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: flex-start;
+    position: fixed;
+    right: -85px;
+    bottom: 75px;
+  }
+}
+
+.footerMiddle {
+  display: flex;
+  justify-content: space-between;
   .footerRight {
     display: flex;
     justify-content: center;

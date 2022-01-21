@@ -1,24 +1,8 @@
 //************************************
-//***! abstracts imports
+//***! HOME PAGE
 //************************************
 
-@import "../abstracts/variables";
-
-//************************************
-//***! Layout imports
-//************************************
-
-@import "../layout/01header", "../layout/02main", "../layout/03footer";
-
-//************************************
-//***! abstracts imports
-//************************************
-
-@import "../abstracts/mixins", "../abstracts/variables";
-
-//*******************************************************
-
-.bgroundContainer {
+.homeBgroundContainer {
   @include bgroundStyles;
   width: 100vw;
   height: 100vh;

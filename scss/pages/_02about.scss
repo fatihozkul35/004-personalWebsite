@@ -1,17 +1,8 @@
 //************************************
-//***! abstracts imports
+//***! ABOUT
 //************************************
 
-@import "../abstracts/mixins", "../abstracts/variables";
-
-//************************************
-//***! Layout imports //************************************
-
-@import "../layout/01header", "../layout/03footer";
-
-//*******************************************************
-
-.bgroundContainerTop {
+.aboutBgroundContainerTop {
   @include bgroundStyles;
   width: auto;
   height: 50vh;
@@ -27,42 +18,20 @@
     }
   }
 }
-.bgroundContainerBottom {
+.aboutBgroundContainerBottom {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: white;
   .bio1 {
-    @include biografy;
+    @include biographysContent;
   }
   .bio2 {
-    @include biografy;
+    @include biographysContent;
   }
   .bio3 {
-    @include biografy;
-  }
-  .footer {
-    width: 100%;
-    .footerLeft {
-      ul {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-      }
-    }
-    .footerRight {
-      transform: rotate(90deg);
-      display: flex;
-      flex-direction: column;
-      margin: 40px;
-      justify-content: flex-start;
-      position: fixed;
-      right: -85px;
-      bottom: 75px;
-    }
+    @include biographysContent;
   }
 }

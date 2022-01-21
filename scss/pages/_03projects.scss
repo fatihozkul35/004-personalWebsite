@@ -1,0 +1,48 @@
+//************************************
+//***! PROJECTS
+//************************************
+
+.projectsBgroundContainerTop {
+  @extend .aboutBgroundContainerTop;
+  .title {
+    h1 {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.projectsBgroundContainerBottom {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+
+  .bio1 {
+    @include projectsContent;
+    background-image: url($project1);
+    // &:hover {
+    //   background-color: orange;
+    // }
+  }
+  .bio2 {
+    @include projectsContent;
+    background-image: url($project2);
+  }
+  .bio3 {
+    @include projectsContent;
+    background-image: url($project3);
+  }
+  .bio4 {
+    @include projectsContent;
+    background-image: url($project4);
+  }
+  .bio5 {
+    @include projectsContent;
+    background-image: url($project5);
+  }
+  .bio6 {
+    @include projectsContent;
+    background-image: url($project6);
+  }
+}

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 .navbar ul {
@@ -34,67 +35,75 @@
 }
 .sectionContainer h1 {
   border-bottom: 3px solid white;
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .sectionContainer h1 span {
   color: red;
 }
+.sectionContainer .contactInformation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem 3rem;
+  font-size: 2rem;
+}
 
-.footer {
+.footerHorizontal {
   display: flex;
   justify-content: space-between;
-  color: white;
 }
-.footer .footerRight {
+.footerHorizontal .footerRight {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bgroundContainer {
+.footerVertical {
+  width: 100%;
+}
+.footerVertical .footerLeft ul {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.footerVertical .footerRight {
+  transform: rotate(90deg);
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  justify-content: flex-start;
+  position: fixed;
+  right: -85px;
+  bottom: 75px;
+}
+
+.footerMiddle {
+  display: flex;
+  justify-content: space-between;
+}
+.footerMiddle .footerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeBgroundContainer {
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  color: white;
   width: 100vw;
   height: 100vh;
 }
 
-.navbar ul {
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 600;
-  padding: 1rem;
-  font-family: "Segoe UI", Nunito, Tahoma, Genava, Verdana, sans-serif;
-}
-.navbar ul li {
-  list-style: none;
-}
-.navbar ul li a {
-  text-decoration: none;
-  padding: 0 1rem;
-  color: white;
-}
-.navbar ul li:hover {
-  background-color: red;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-}
-.footer .footerRight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bgroundContainerTop {
+.aboutBgroundContainerTop, .projectsBgroundContainerTop {
   background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  color: white;
   width: auto;
   height: 50vh;
   text-align: center;
@@ -104,61 +113,123 @@
   justify-content: space-between;
   color: white;
 }
-.bgroundContainerTop .titel p {
+.aboutBgroundContainerTop .titel p, .projectsBgroundContainerTop .titel p {
   padding: 1rem 5rem;
 }
 
-.bgroundContainerBottom {
+.aboutBgroundContainerBottom {
   background-color: black;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   color: white;
 }
-.bgroundContainerBottom .bio1 {
-  width: 50vw;
+.aboutBgroundContainerBottom .bio1 {
+  width: 60vw;
   height: 25vh;
   background-color: #414141;
-  margin: 2.5rem 0;
   padding: 0.5rem;
+  margin: 1rem;
   border-bottom: 0.5rem solid #ff652f;
 }
-.bgroundContainerBottom .bio2 {
-  width: 50vw;
+.aboutBgroundContainerBottom .bio2 {
+  width: 60vw;
   height: 25vh;
   background-color: #414141;
-  margin: 2.5rem 0;
   padding: 0.5rem;
+  margin: 1rem;
   border-bottom: 0.5rem solid #ff652f;
 }
-.bgroundContainerBottom .bio3 {
-  width: 50vw;
+.aboutBgroundContainerBottom .bio3 {
+  width: 60vw;
   height: 25vh;
   background-color: #414141;
-  margin: 2.5rem 0;
   padding: 0.5rem;
+  margin: 1rem;
   border-bottom: 0.5rem solid #ff652f;
 }
-.bgroundContainerBottom .footer {
-  width: 100%;
+
+.projectsBgroundContainerTop .title h1 {
+  margin-bottom: 2.5rem;
 }
-.bgroundContainerBottom .footer .footerLeft ul {
+
+.projectsBgroundContainerBottom {
+  background-color: black;
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
 }
-.bgroundContainerBottom .footer .footerRight {
-  transform: rotate(90deg);
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-  justify-content: flex-start;
-  position: fixed;
-  right: -85px;
-  bottom: 75px;
+.projectsBgroundContainerBottom .bio1 {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../img/project-1.jpg");
+}
+.projectsBgroundContainerBottom .bio2 {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../img/project-2.jpg");
+}
+.projectsBgroundContainerBottom .bio3 {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../img/project-3.jpg");
+}
+.projectsBgroundContainerBottom .bio4 {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../img/project-4.jpg");
+}
+.projectsBgroundContainerBottom .bio5 {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../img/project-5.jpg");
+}
+.projectsBgroundContainerBottom .bio6 {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url("../img/project-6.jpg");
+}
+
+.contactBgroundContainer {
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=index.css.map */

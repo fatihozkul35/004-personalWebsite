@@ -1,3 +1,7 @@
+//************************************
+//***! MİXİN
+//************************************
+
 @mixin bgroundStyles {
   background: linear-gradient(
       to right,
@@ -8,13 +12,24 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  color: white;
 }
 
-@mixin biografy {
-  width: 50vw;
+@mixin biographysContent {
+  width: 60vw;
   height: 25vh;
   background-color: #414141;
-  margin: 2.5rem 0;
   padding: 0.5rem;
+  margin: 1rem;
   border-bottom: 0.5rem solid #ff652f;
+}
+
+@mixin projectsContent {
+  width: 40vw;
+  height: 60vh;
+  border-bottom: 0.5rem solid #ff652f;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
 }
