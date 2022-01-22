@@ -22,7 +22,7 @@
   }
 
   .projectsBgroundContainerBottom div.project {
-    width: 35vw;
+    width: 50vw;
     height: 20vh;
     border-bottom: 0.5rem solid yellow;
   }
@@ -263,10 +263,6 @@
   color: white;
   width: 100vw;
   height: 100vh;
-}
-
-html {
-  transition: a 5s;
 }
 
 /*# sourceMappingURL=index.css.map */
