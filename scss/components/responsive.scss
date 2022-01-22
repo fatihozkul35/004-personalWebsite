@@ -1,0 +1,38 @@
+//************************************
+//***! RESPONSİVE
+//************************************
+
+@include media-sm {
+  header {
+    .navbar {
+      ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .footerHorizontal {
+    margin-bottom: 150px;
+  }
+
+  .biography {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .projectsBgroundContainerBottom {
+    div.project {
+      width: 35vw;
+      height: 20vh;
+      border-bottom: 0.5rem solid yellow;
+    }
+  }
+
+  .contactInformation {
+    flex-wrap: wrap;
+  }
+}
+
+@mixin media-md {
+}

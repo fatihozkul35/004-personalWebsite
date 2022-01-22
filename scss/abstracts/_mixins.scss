@@ -33,3 +33,17 @@
   background-size: cover;
   cursor: pointer;
 }
+@mixin media-sm {
+  /* Extra small devices (phones, 600px and down) */
+  @media (max-width: 768px) {
+    /* only screen and*/
+    @content;
+  }
+}
+
+@mixin media-md {
+  // /* Medium devices (landscape tablets, 768px and up) */
+  @media (max-width: 992px) {
+    @content;
+  }
+}

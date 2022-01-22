@@ -5,6 +5,32 @@
   color: white;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 768px) {
+  /* only screen and*/
+  header .navbar ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footerHorizontal {
+    margin-bottom: 150px;
+  }
+
+  .biography p {
+    font-size: 0.9rem;
+  }
+
+  .projectsBgroundContainerBottom div.project {
+    width: 35vw;
+    height: 20vh;
+    border-bottom: 0.5rem solid yellow;
+  }
+
+  .contactInformation {
+    flex-wrap: wrap;
+  }
+}
 .navbar ul {
   display: flex;
   justify-content: flex-end;
@@ -21,6 +47,9 @@
   color: white;
 }
 .navbar ul li:hover {
+  background-color: red;
+}
+.navbar .active {
   background-color: red;
 }
 
@@ -162,7 +191,7 @@
   flex-wrap: wrap;
   padding: 2rem 5rem;
 }
-.projectsBgroundContainerBottom .bio1 {
+.projectsBgroundContainerBottom .pro1 {
   width: 40vw;
   height: 60vh;
   border-bottom: 0.5rem solid #ff652f;
@@ -172,7 +201,7 @@
   cursor: pointer;
   background-image: url("../img/project-1.jpg");
 }
-.projectsBgroundContainerBottom .bio2 {
+.projectsBgroundContainerBottom .pro2 {
   width: 40vw;
   height: 60vh;
   border-bottom: 0.5rem solid #ff652f;
@@ -182,7 +211,7 @@
   cursor: pointer;
   background-image: url("../img/project-2.jpg");
 }
-.projectsBgroundContainerBottom .bio3 {
+.projectsBgroundContainerBottom .pro3 {
   width: 40vw;
   height: 60vh;
   border-bottom: 0.5rem solid #ff652f;
@@ -192,7 +221,7 @@
   cursor: pointer;
   background-image: url("../img/project-3.jpg");
 }
-.projectsBgroundContainerBottom .bio4 {
+.projectsBgroundContainerBottom .pro4 {
   width: 40vw;
   height: 60vh;
   border-bottom: 0.5rem solid #ff652f;
@@ -202,7 +231,7 @@
   cursor: pointer;
   background-image: url("../img/project-4.jpg");
 }
-.projectsBgroundContainerBottom .bio5 {
+.projectsBgroundContainerBottom .pro5 {
   width: 40vw;
   height: 60vh;
   border-bottom: 0.5rem solid #ff652f;
@@ -212,7 +241,7 @@
   cursor: pointer;
   background-image: url("../img/project-5.jpg");
 }
-.projectsBgroundContainerBottom .bio6 {
+.projectsBgroundContainerBottom .pro6 {
   width: 40vw;
   height: 60vh;
   border-bottom: 0.5rem solid #ff652f;
@@ -231,6 +260,10 @@
   color: white;
   width: 100vw;
   height: 100vh;
+}
+
+html {
+  transition: a 5s;
 }
 
 /*# sourceMappingURL=index.css.map */

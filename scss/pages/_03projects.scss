@@ -18,30 +18,30 @@
   flex-wrap: wrap;
   padding: 2rem 5rem;
 
-  .bio1 {
+  .pro1 {
     @include projectsContent;
     background-image: url($project1);
     // &:hover {
     //   background-color: orange;
     // }
   }
-  .bio2 {
+  .pro2 {
     @include projectsContent;
     background-image: url($project2);
   }
-  .bio3 {
+  .pro3 {
     @include projectsContent;
     background-image: url($project3);
   }
-  .bio4 {
+  .pro4 {
     @include projectsContent;
     background-image: url($project4);
   }
-  .bio5 {
+  .pro5 {
     @include projectsContent;
     background-image: url($project5);
   }
-  .bio6 {
+  .pro6 {
     @include projectsContent;
     background-image: url($project6);
   }
